@@ -1,0 +1,80 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="css/style.css">
+    <title>Bootcamp Form</title>
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"
+    ></script>
+  </head>
+  <body>
+    <form>
+      <h2 align="center">What did you like about the boot camp?</h2>
+      <div onclick="func2()">
+        <input
+          type="checkbox"
+          name="question"
+          value="The technologies used"
+          id="radio1"
+        />
+        <label for="The technologies used">a. The technologies used</label><br />
+        <input
+          type="checkbox"
+          name="question"
+          value="The skills acquired"
+          id="radio2"
+        />
+        <label for="The skills acquired">b. The skills acquired</label><br />
+        <input
+          type="checkbox"
+          name="question"
+          value="The food and drinks"
+          id="radio3"
+        />
+        <label for="The food and drinks">c. The food and drinks</label><br />
+        <input
+          type="checkbox"
+          name="question"
+          value="The accommodation"
+          id="radio4"
+        />
+        <label for="The accommodation">d. The accommodation</label><br />
+        <input
+          type="checkbox"
+          name="question"
+          value="The trainers"
+          id="radio5"
+        />
+        <label for="The trainers">e. The trainers</label><br />
+        <input
+          type="checkbox"
+          name="question"
+          value="Your fellow students"
+          id="radio6"
+        />
+        <label for="Your fellow students">f. Your fellow students</label><br />
+              <input
+        type="checkbox"
+        name="question"
+        value="Nothing"
+        id="radio7"
+        onclick="func1()"
+      />
+      <label for="Nothing">g. Nothing</label><br />
+        
+      </div>
+      <br> <br> 
+      <center><input type="submit" value="Submit"  /></center>
+      <br/><br/><br/>
+    <h2 align="center">Statistical Graph</h2>
+
+      <center><canvas id="cht" style="max-width: 700px;width: 100%;"></canvas></center>
+    </form>
+
+    <script src="js/main.js" defer>
+    </script>
+  </body>
+</html>
